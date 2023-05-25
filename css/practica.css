@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+*{font-family: 'Instrument Serif', serif;
+color: #541b83;}
+img{width: 200px;
+height: 200px;}
+
+.nav{display: flex;
+justify-content: center;
+padding: 40px 30px;}
+
+.navpractica{display: flex;
+justify-content:center;
+gap: 15px;}
+
+.practica1{display: flex;}
+
+main{display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+padding: 20px;
+grid-template-areas: 'left left right right';}
