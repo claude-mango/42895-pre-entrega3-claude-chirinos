@@ -36,14 +36,13 @@ h1{text-align: center;
     padding: 15px;
   gap: 1px 120px;}
     .index1 img{display: flex;
-    width: 30%;
+      width: 30%;
     height: 30%;
     object-fit: cover;
     border-radius: 60%;
     border: 2px outset #2d1e8367;}
     .index2{background-color: rgba(33, 121, 148, 0.199);
-    display: inline-block;
-    width: 40%;
+    display: flex;
   text-align:center;
 font-size: 12px; 
 margin: 30px;
@@ -329,9 +328,4 @@ height: 350px;
 width: 350px;}
 .part:hover p{color: black;
 font-size: 30px;}
-
-@media only screen and (max-width:480px;){
-
-}
-  
 
