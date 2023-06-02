@@ -5,6 +5,7 @@
     <title>contactos</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -21,30 +22,32 @@
         <li><a href="contactos.html">contactos</a></li>
         </ul>
         </nav>
-        <hr>
+        
     </header>
     <main class="contactosbackground">
         <h1>contactanos</h1>
         <section class="contactos1">
             <p>por favor denos su opinion, es muy importante a la hora de mejorar nuestro sitio y conocimientos.</p>
         </section>
+        
 <section class="contactos2">
         <form action="" method="post" enctype="text/plain">
             <div>
             <label for="primer-nombre">nombre:</label>
             <input type="text" placeholder="tu nombre" name="primer-nombre">
         </div>
-        <div>
-            <label for="email">email</label>
-            <input type="email" placeholder="tu correo electronico" name="email">
-        </div>
-        <div>
-            <label for="mensaje">mensaje</label>
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="comparta su opinion"></textarea>
-        </div>
-        <div>
-            <label for="terminos">acepta terminos y condiciones?</label>
-            <input type="checkbox" name="terminos" id="">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">tu email:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">no compartas con nadie mas</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">mensaje:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="comparta su opinion"></textarea>
+</div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">acepta terminos y condiciones?</label>
         </div>
         <div>
             <input type="submit" value="enviar">
@@ -60,6 +63,7 @@
 
 
     </main>
-    <footer class="footer1"><hr></footer>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
