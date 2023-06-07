@@ -15,12 +15,9 @@ overflow: hidden;}
     
   
   .tipos{
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px 40px;
+    
+    @include flex(row,center,center,20px 40px,wrap);
+  
 
   .tipos1{background-color: $light-color;
     padding: 5px 2px;

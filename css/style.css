@@ -121,10 +121,10 @@ a:hover {
 .tipos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px 40px;
+  flex-wrap: wrap;
 }
 .tipos .tipos1 {
   background-color: rgb(120, 136, 150);
