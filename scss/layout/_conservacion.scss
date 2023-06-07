@@ -1,0 +1,28 @@
+.conservacion{display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;}
+      .conservacion1{background-color: $light-color;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        width: 90%;
+      text-align: justify;
+    object-fit: cover;
+    font-size: 15px;
+    border: inset 1px #2d1e8367;
+    border-radius: 5%;
+    padding: 10px 5px;}
+    .conservacion1 h2, .conservacion1 p{padding: 10px 15px;}
+  .conservacion1 img{height: 400px;
+    object-fit: cover;
+    padding: 30px 1px;
+    border-radius: 15%;}
+  .tabuladorproteccion{font-size: 24px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+    .tabuladorproteccion ul li{display: inline;
+      padding: 10px;}

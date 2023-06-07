@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+*{margin: 0;
+padding: 0;}
+
+
+body{font-family: $font;
+  color: #000000f8;}
+
+.colorbody{background-color:$main-color; }
+
+h1{text-align: center;
+    font-size: 30px;
+    gap: 50px;}

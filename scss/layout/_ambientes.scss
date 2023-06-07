@@ -1,0 +1,60 @@
+.ambiente{display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  
+    .ambiente1{background-color: $light-color;
+      display: flex;
+      flex-wrap: nowrap;
+    text-align: justify;
+  width: 90%;
+  object-fit: cover;
+  font-size: 15px;
+  border: inset 1px #2d1e8367;
+  border-radius: 5%;
+  padding: 10px 5px;
+
+  h2{padding: 10px 15px;}
+  p{padding: 10px 15px;}
+
+  img{height: 400px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 2px outset #2d1e8367;}
+}
+  }
+  
+  
+  .tabula{font-size: 15px;
+      justify-items:center;
+      align-items: center;
+  display: grid;
+  grid-template-areas:
+  'area1 area2'
+  'area3 area4'
+  'area5 area6' ;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  column-gap: 5px;
+  row-gap: 5px;}
+    
+  .tabula__hijo{display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img{width: 200px;
+      height: 200px;
+    padding: 5px 2px;}
+
+    h2{ padding: 10px 15px;}
+
+    .b1{grid-area: area1;}
+    .b2{grid-area: area2;}
+    .b3{grid-area: area3;}
+    .b4{grid-area: area4;}
+    .b5{grid-area: area5;}
+    .b6{grid-area: area6;}
+  }
+
+    

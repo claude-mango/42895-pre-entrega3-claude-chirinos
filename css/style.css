@@ -1,479 +1,698 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
-*{margin: 0;
-padding: 0;}
+body {
+  font-family: "Instrument Serif", serif;
+  color: rgba(0, 0, 0, 0.9725490196);
+}
 
-body{font-family: 'Instrument Serif', serif;
-  color: #000000f8;}
+.colorbody {
+  background-color: #a5a5a5;
+}
 
-.colorbody{background-color:#a5a5a5; }
+h1 {
+  text-align: center;
+  font-size: 30px;
+  gap: 50px;
+}
 
-.menu-navegador{display: flex; 
+.menu-navegador {
+  display: flex;
   background-color: #415851;
   justify-content: space-between;
   flex-wrap: wrap;
-  }
-
-.menu-navegador a{display: flex;
+}
+.menu-navegador a {
+  display: flex;
   text-transform: uppercase;
   font-size: 24px;
   padding: 20px;
   gap: 10px;
   color: orange;
-justify-content:center;
-align-items:center;}
-
-.menu-navegador ul {list-style-type: none;
-  display: flex; 
-justify-content: flex-end;}
-
-.menu-navegador img{border-radius: 80%;
-    width: 5%;
-    height: 5%;
-    object-fit: cover;
-  display: flex;
-  text-align: center;
-  justify-content: center;}
-
-h1{text-align: center;
-  font-size: 30px;
-  gap: 50px;}
-
-  .index1{
-    display: flex;
-    width: 80%;
-    padding: 15px;
-  gap: 1px 120px;}
-    .index1 img{display: flex;
-      width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 60%;
-    border: 2px outset #2d1e8367;}
-    .index2{background-color: rgba(33, 121, 148, 0.199);
-    display: flex;
-  text-align:center;
-font-size: 12px; 
-margin: 30px;
-padding: 50px;
-border: 2px inset #2d1e8367;
-border-radius: 15%;}
-.index-img img{display: inline-block;
-  width: 30%;
-  height: 30%;
-  object-fit: cover;
-  border-radius: 60%;
-border: 2px outset #2d1e8367;}
-
-.familia1{
-  display: inline-block;
-  text-align:center;}
-  .familia2{ background-color: rgba(33, 121, 148, 0.199);
-      display: inline-block;
-  text-align:center;
-font-size: 15px; 
-margin: 30px;
-padding: 50px 20px;
-border: 2px inset #2d1e8367;
-border-radius: 15%;
-overflow: hidden;}
-
-.tipos{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-gap: 20px 40px;}
-
-.tipos1{background-color: rgb(120, 136, 150);
-padding: 5px 2px;
-text-align: center;
-font-size: 15px;
-display: inline-block;
-width: 30%;
-border-radius: 5%;
-border: 1px solid #2d1e8367;
-margin: 15px;}
-.tipos2{background-color: rgb(120, 136, 150);
-  padding: 5px 2px;
-  text-align:center;
-font-size: 15px;
-  display: inline-block;
-  width: 30%;
-  border-radius: 5%;
-  border: 1px solid #2d1e8367;
-  margin: 15px;
-object-fit: cover;}
-.tipos3{background-color: rgb(120, 136, 150);
-  padding: 5px 2px;
-  text-align:center;
-font-size: 15px;
-  display: inline-block;
-  width: 30%;
-  border-radius: 5%;
-  border: 1px solid #2d1e8367;
-  margin: 15px;
-object-fit: cover;}
-
-.tipos1 h2, .tipos1 p {padding: 10px;}
-.tipos2 h2, .tipos2 p {padding: 10px;}
-.tipos3 h2, .tipos3 p {padding: 10px;}
-
-.tipos1 img{width: 100%;
-  height: 500px;
-  border-radius: 5%;}
-  .tipos2 img{width: 100%;
-    height: 500px;
-    border-radius: 5%;}
-    .tipos3 img{width: 100%;
-      height: 500px;
-      border-radius: 5%;}
-
-
-.ambiente{display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;}
-.ambiente1{background-color: rgb(120, 136, 150);
-    display: flex;
-    flex-wrap: nowrap;
-  text-align: justify;
-width: 90%;
-object-fit: cover;
-font-size: 15px;
-border: inset 1px #2d1e8367;
-border-radius: 5%;
-padding: 10px 5px;}
-.ambiente1 h2,.ambiente1p{padding: 10px 15px;}
-.ambiente1 img{height: 400px;
-  object-fit: cover;
-  border-radius: 15%;
-  border: 2px outset #2d1e8367;}
-.tabula{font-size: 15px;
-    justify-items:center;
-    align-items: center;
-display: grid;
-grid-template-areas:
-'area1 area2'
-'area3 area4'
-'area5 area6' ;
-grid-template-columns:repeat(2,1fr);
-grid-template-rows: repeat(3,1fr);
-column-gap: 5px;
-row-gap: 5px;}
-  
-  .tabula__hijo img{width: 200px;
-  height: 200px;
-padding: 5px 2px;}
-.tabula__hijo h2{ padding: 10px 15px;}
-  .tabula__hijo{display: flex;
-justify-content: center;
-align-items: center;}
-  .b1{grid-area: area1;}
-  .b2{grid-area: area2;}
-  .b3{grid-area: area3;}
-  .b4{grid-area: area4;}
-  .b5{grid-area: area5;}
-  .b6{grid-area: area6;}
-  
-.conservacion{display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;}
-    .conservacion1{background-color: rgb(120, 136, 150);
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: nowrap;
-      width: 90%;
-    text-align: justify;
-  object-fit: cover;
-  font-size: 15px;
-  border: inset 1px #2d1e8367;
-  border-radius: 5%;
-  padding: 10px 5px;}
-  .conservacion1 h2, .conservacion1 p{padding: 10px 15px;}
-.conservacion1 img{height: 400px;
-  object-fit: cover;
-  padding: 30px 1px;
-  border-radius: 15%;}
-.tabuladorproteccion{font-size: 24px;
-  gap: 50px;
   justify-content: center;
   align-items: center;
-  text-align: center;}
-  .tabuladorproteccion ul li{display: inline;
-    padding: 10px;}
+}
+.menu-navegador ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  color: orange;
+}
+.menu-navegador img {
+  border-radius: 80%;
+  width: 5%;
+  height: 5%;
+  object-fit: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
-    .contactosbackground{background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
-      background-size:cover;}
-    .contactos1{background-color: rgba(33, 121, 148, 0.959);
-    display: inline-block;
-    width: 40%;
-  text-align:center;
-font-size: 24px; 
-margin: 30px;
-padding: 50px;
-border: 2px inset #2d1e8367;
-border-radius: 5%;}
-      .contactos2{display: inline-flex;
-        background-color: rgb(201, 217, 218);
-        padding: 10px;
-        border: #6b1e83 2px inset;
-        gap: 1px 100px;}
-        
-        
+a:visited {
+  background-color: darkslategrey;
+  color: #000000;
+}
+a:active {
+  background-color: yellow;
+  color: rgba(0, 0, 0, 0.336);
+}
+a:hover {
+  font-weight: bold;
+  padding: 1px;
+  background-color: rgb(120, 136, 150);
+  color: azure;
+  transition: 0.5s;
+  border-radius: 10%;
+}
 
-      a:visited {background-color: darkslategrey;
-        color: #000000;}
-    
-    a:active {background-color: yellow;
-      color: rgba(0, 0, 0, 0.336);}
-  
-  a:hover {font-weight: bold;
-    padding: 1px;
-    background-color: rgba(10, 10, 60, 0.445);
-    color: azure;
-    transition: .5s;
-    border-radius: 10%;}
+.index1 {
+  display: flex;
+  width: 80%;
+  padding: 15px;
+  gap: 1px 120px;
+}
 
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-
-  .menu-navegador{justify-content: center; align-items: center;}
-  
-.index1 img {display: flex;
+.index1 img {
+  display: flex;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 60%;
-  border: 2px outset #2d1e8367;}
-  .index2{display: flex;
-    flex-direction: column;
-  justify-content: center;
-  align-self: center;}
-  .index2 p{text-align: center; justify-items: center;}
-  .index-img{display: flex;
-  flex-direction: column;
-  align-items: center;}
-  
+  border: 2px outset rgba(45, 30, 131, 0.4039215686);
+}
 
-.ambiente{display: flex; flex-direction: column-reverse; flex-wrap: wrap;}
-.ambiente1 img{height: 200px;}
-.abiente1 h2,p{font-size: 10px; text-align: center; justify-items: center; padding: 0;}
+.index2 {
+  background-color: rgb(120, 136, 150);
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  margin: 30px;
+  padding: 50px;
+  border: 2px inset rgba(45, 30, 131, 0.4039215686);
+  border-radius: 15%;
+}
 
-.conservacion1 img{height: 200px;}
-  .conservacion1 h2,p{font-size: 15px; text-align: center; justify-items: center;
-    padding: 10px 15px;}
+.index-img img {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 60%;
+  border: 2px outset rgba(45, 30, 131, 0.4039215686);
+}
 
-  .tipos{display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    }
-    .tipos1,.tipos2,.tipos3{text-align: center;}
-  }
+.familia1 {
+  display: inline-block;
+  text-align: center;
+}
 
-  
-@media only screen and (max-width: 767px){
-  
-  .menu-navegador{flex-direction: column;}
-.menu-navegador ul{flex-direction: column;}
-  
-.index1{display: flex;
-  flex-direction: column;
+.familia2 {
+  background-color: rgba(33, 121, 148, 0.199);
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  margin: 30px;
+  padding: 50px 20px;
+  border: 2px inset rgba(45, 30, 131, 0.4039215686);
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.tipos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  padding: 15px;
-gap: 1px 120px;}
-  .index1 img{display: flex;
+  gap: 20px 40px;
+}
+.tipos .tipos1 {
+  background-color: rgb(120, 136, 150);
+  padding: 5px 2px;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  width: 30%;
+  border-radius: 5%;
+  border: 1px solid rgba(45, 30, 131, 0.4039215686);
+  margin: 15px;
+}
+.tipos .tipos1 h2 {
+  padding: 10px;
+}
+.tipos .tipos1 p {
+  padding: 10px;
+}
+.tipos .tipos1 img {
+  width: 100%;
+  height: 500px;
+  border-radius: 5%;
+}
+.tipos .tipos2 {
+  background-color: rgb(120, 136, 150);
+  padding: 5px 2px;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  width: 30%;
+  border-radius: 5%;
+  border: 1px solid rgba(45, 30, 131, 0.4039215686);
+  margin: 15px;
+  object-fit: cover;
+}
+.tipos .tipos2 h2 {
+  padding: 10px;
+}
+.tipos .tipos2 p {
+  padding: 10px;
+}
+.tipos .tipos2 img {
+  width: 100%;
+  height: 500px;
+  border-radius: 5%;
+}
+.tipos .tipos3 {
+  background-color: rgb(120, 136, 150);
+  padding: 5px 2px;
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  width: 30%;
+  border-radius: 5%;
+  border: 1px solid rgba(45, 30, 131, 0.4039215686);
+  margin: 15px;
+  object-fit: cover;
+}
+.tipos h2 {
+  padding: 10px;
+}
+.tipos p {
+  padding: 10px;
+}
+.tipos img {
+  width: 100%;
+  height: 500px;
+  border-radius: 5%;
+}
+
+.ambiente {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.ambiente .ambiente1 {
+  background-color: rgb(120, 136, 150);
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: justify;
+  width: 90%;
+  object-fit: cover;
+  font-size: 15px;
+  border: inset 1px rgba(45, 30, 131, 0.4039215686);
+  border-radius: 5%;
+  padding: 10px 5px;
+}
+.ambiente .ambiente1 h2 {
+  padding: 10px 15px;
+}
+.ambiente .ambiente1 p {
+  padding: 10px 15px;
+}
+.ambiente .ambiente1 img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15%;
+  border: 2px outset rgba(45, 30, 131, 0.4039215686);
+}
+
+.tabula {
+  font-size: 15px;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "area1 area2" "area3 area4" "area5 area6";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.tabula__hijo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabula__hijo img {
+  width: 200px;
+  height: 200px;
+  padding: 5px 2px;
+}
+.tabula__hijo h2 {
+  padding: 10px 15px;
+}
+.tabula__hijo .b1 {
+  grid-area: area1;
+}
+.tabula__hijo .b2 {
+  grid-area: area2;
+}
+.tabula__hijo .b3 {
+  grid-area: area3;
+}
+.tabula__hijo .b4 {
+  grid-area: area4;
+}
+.tabula__hijo .b5 {
+  grid-area: area5;
+}
+.tabula__hijo .b6 {
+  grid-area: area6;
+}
+
+.conservacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conservacion1 {
+  background-color: rgb(120, 136, 150);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  width: 90%;
+  text-align: justify;
+  object-fit: cover;
+  font-size: 15px;
+  border: inset 1px rgba(45, 30, 131, 0.4039215686);
+  border-radius: 5%;
+  padding: 10px 5px;
+}
+
+.conservacion1 h2, .conservacion1 p {
+  padding: 10px 15px;
+}
+
+.conservacion1 img {
+  height: 400px;
+  object-fit: cover;
+  padding: 30px 1px;
+  border-radius: 15%;
+}
+
+.tabuladorproteccion {
+  font-size: 24px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tabuladorproteccion ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.contactosbackground {
+  background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
+  background-size: cover;
+}
+
+.contactos1 {
+  background-color: rgb(120, 136, 150);
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  font-size: 24px;
+  margin: 30px;
+  padding: 50px;
+  border: 2px inset rgba(45, 30, 131, 0.4039215686);
+  border-radius: 5%;
+}
+
+.contactos2 {
+  display: inline-flex;
+  background-color: rgb(201, 217, 218);
+  padding: 10px;
+  border: #6b1e83 2px inset;
+  gap: 1px 100px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-navegador {
+    justify-content: center;
+    align-items: center;
+  }
+  .index1 img {
+    display: flex;
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 60%;
-    border: 2px outset #2d1e8367;}
-  .index2{background-color: rgba(33, 121, 148, 0.199);
-  display: flex;
-text-align:center;
-font-size: 14px; 
-margin: 30px;
-padding: 50px;
-border: 2px inset #2d1e8367;
-border-radius: 15%;}
-.index-img{display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 60%;}
-
-.ambiente{display: flex; flex-direction: column-reverse; flex-wrap: wrap;}
-.ambiente1{flex-wrap: wrap;}
-.ambiente1 img{height: 100px;}
-.ambiente1 h2,p{font-size: 12px; text-align: center; justify-items: center; padding: 0;}
-  .tabula{
+    border: 2px outset rgba(45, 30, 131, 0.4039215686);
+  }
+  .index2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .index2 p {
+    text-align: center;
+    justify-items: center;
+  }
+  .index-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ambiente {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .ambiente1 img {
+    height: 200px;
+  }
+  .abiente1 h2, p {
+    font-size: 10px;
+    text-align: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .conservacion1 img {
+    height: 200px;
+  }
+  .conservacion1 h2, p {
     font-size: 15px;
-      justify-items:center;
-      align-items: center;
-  display: grid;
-  grid-template-areas:
-  'area1'
-  'area2'
-  'area3'
-  'area4'
-  'area5'
-  'area6' ;
-  grid-template-columns:repeat(1,1fr);
-  grid-template-rows: auto;
-  column-gap: 5px;
-  row-gap: 5px;}
-    
-    .tabula__hijo img{ width: 30%;
-    height: 30%;
-  padding: 5px 2px;}
-  .tabula__hijo h2{ padding: 10px 15px;}
-    .tabula__hijo{display: flex;
-  justify-content: center;
-  align-items: center;}
-    .b1{grid-area: area1;}
-    .b2{grid-area: area2;}
-    .b3{grid-area: area3;}
-    .b4{grid-area: area4;}
-    .b5{grid-area: area5;}
-    .b6{grid-area: area6;}
-
-    .familia1{display: inline-block;
-      text-align:center;}
-      .familia2{ background-color: rgba(33, 121, 148, 0.199);
-          display: inline-block;
-      text-align:center;
-    font-size: 15px; 
-    margin: 30px;
-    padding: 50px 20px;
-    border: 2px inset #2d1e8367;
-    border-radius: 15%;
-    overflow: hidden;}
-    
-    .tipos{display: flex;
+    text-align: center;
+    justify-items: center;
+    padding: 10px 15px;
+  }
+  .tipos {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px 20px;}
-    
-    .tipos1{background-color: rgb(120, 136, 150);
+  }
+  .tipos1, .tipos2, .tipos3 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-navegador {
+    flex-direction: column;
+  }
+  .menu-navegador ul {
+    flex-direction: column;
+  }
+  .index1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    gap: 1px 120px;
+  }
+  .index1 img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 60%;
+    border: 2px outset rgba(45, 30, 131, 0.4039215686);
+  }
+  .index2 {
+    background-color: rgba(33, 121, 148, 0.199);
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px;
+    padding: 50px;
+    border: 2px inset rgba(45, 30, 131, 0.4039215686);
+    border-radius: 15%;
+  }
+  .index-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60%;
+  }
+  .ambiente {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .ambiente .ambiente1 {
+    flex-wrap: wrap;
+  }
+  .ambiente .ambiente1 img {
+    height: 100px;
+  }
+  .ambiente .ambiente1 h2 {
+    font-size: 12px;
+    text-align: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .ambiente .ambiente1 p {
+    font-size: 12px;
+    text-align: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .tabula {
+    font-size: 15px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  .tabula .tabula__hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabula .tabula__hijo img {
+    width: 30%;
+    height: 30%;
+    padding: 5px 2px;
+  }
+  .tabula .tabula__hijo h2 {
+    padding: 10px 15px;
+  }
+  .tabula .tabula__hijo .b1 {
+    grid-area: area1;
+  }
+  .tabula .tabula__hijo .b2 {
+    grid-area: area2;
+  }
+  .tabula .tabula__hijo .b3 {
+    grid-area: area3;
+  }
+  .tabula .tabula__hijo .b4 {
+    grid-area: area4;
+  }
+  .tabula .tabula__hijo .b5 {
+    grid-area: area5;
+  }
+  .tabula .tabula__hijo .b6 {
+    grid-area: area6;
+  }
+  .familia1 {
+    display: inline-block;
+    text-align: center;
+  }
+  .familia1 .familia2 {
+    background-color: rgba(33, 121, 148, 0.199);
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+    padding: 50px 20px;
+    border: 2px inset rgba(45, 30, 131, 0.4039215686);
+    border-radius: 15%;
+    overflow: hidden;
+  }
+  .tipos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+  }
+  .tipos .tipos1 {
+    background-color: rgb(120, 136, 150);
     padding: 5px 2px;
     text-align: center;
     font-size: 15px;
     display: inline-block;
     width: 80%;
     border-radius: 5%;
-    border: 1px solid #2d1e8367;
-    margin: 15px;}
-    .tipos2{background-color: rgb(120, 136, 150);
-      padding: 5px 2px;
-      text-align:center;
-    font-size: 15px;
-      display: inline-block;
-      width: 80%;
+    border: 1px solid rgba(45, 30, 131, 0.4039215686);
+    margin: 15px;
+  }
+  .tipos .tipos1 h2 {
+    padding: 10px;
+  }
+  .tipos .tipos1 p {
+    padding: 10px;
+  }
+  .tipos .tipos1 img {
+    width: 100%;
+    height: 300px;
     border-radius: 5%;
-      border: 1px solid #2d1e8367;
-      margin: 15px;
-    object-fit: cover;}
-    .tipos3{background-color: rgb(120, 136, 150);
-      padding: 5px 2px;
-      text-align:center;
+  }
+  .tipos .tipos2 {
+    background-color: rgb(120, 136, 150);
+    padding: 5px 2px;
+    text-align: center;
     font-size: 15px;
-      display: inline-block;
-      width: 80%;
-      border-radius: 5%;
-      border: 1px solid #2d1e8367;
-      margin: 15px;
-    object-fit: cover;}
-    
-    .tipos1 h2, .tipos1 p {padding: 10px;}
-    .tipos2 h2, .tipos2 p {padding: 10px;}
-    .tipos3 h2, .tipos3 p {padding: 10px;}
-    
-    .tipos1 img{width: 100%;
-      height: 300px;
-      border-radius: 5%;}
-      .tipos2 img{width: 100%;
-        height: 300px;
-        border-radius: 5%;}
-        .tipos3 img{width: 100%;
-          height: 300px;
-          border-radius: 5%;}
+    display: inline-block;
+    width: 80%;
+    border-radius: 5%;
+    border: 1px solid rgba(45, 30, 131, 0.4039215686);
+    margin: 15px;
+    object-fit: cover;
+  }
+  .tipos .tipos2 h2 {
+    padding: 10px;
+  }
+  .tipos .tipos2 p {
+    padding: 10px;
+  }
+  .tipos .tipos2 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5%;
+  }
+  .tipos .tipos3 {
+    background-color: rgb(120, 136, 150);
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    width: 80%;
+    border-radius: 5%;
+    border: 1px solid rgba(45, 30, 131, 0.4039215686);
+    margin: 15px;
+    object-fit: cover;
+  }
+  .tipos .tipos3 h2 {
+    padding: 10px;
+  }
+  .tipos .tipos3 p {
+    padding: 10px;
+  }
+  .tipos .tipos3 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5%;
+  }
+  .conservacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .conservacion1 {
+    background-color: rgb(120, 136, 150);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    object-fit: cover;
+    border: inset 1px rgba(45, 30, 131, 0.4039215686);
+    border-radius: 5%;
+    padding: 10px 5px;
+  }
+  .conservacion1 h2, .conservacion1 p {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .conservacion1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 15px 1px;
+    border-radius: 15%;
+  }
+  .tabuladorproteccion {
+    font-size: 24px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tabuladorproteccion ul {
+    display: inline;
+    padding: 10px;
+  }
+  .contactos1 {
+    background-color: rgba(33, 121, 148, 0.959);
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px;
+    padding: 50px;
+    border: 2px inset rgba(45, 30, 131, 0.4039215686);
+    border-radius: 80%;
+  }
+  .contactos2 {
+    display: inline-flex;
+    background-color: rgb(201, 217, 218);
+    padding: 10px;
+    border: #6b1e83 2px inset;
+    gap: 1px 100px;
+  }
+  .contactosbackground {
+    background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
+    background-size: cover;
+  }
+  .contactos1 {
+    background-color: rgba(33, 121, 148, 0.959);
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px;
+    padding: 50px;
+    border: 2px inset rgba(45, 30, 131, 0.4039215686);
+    border-radius: 5%;
+  }
+  .contactos2 {
+    display: inline-flex;
+    background-color: rgb(201, 217, 218);
+    padding: 10px;
+    border: #6b1e83 2px inset;
+    gap: 1px 100px;
+  }
+  .video {
+    display: flex;
+    width: 80%;
+    height: auto;
+  }
+}
 
-          .conservacion{display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;}
-              .conservacion1{background-color: rgb(120, 136, 150);
-                display: flex;
-                flex-direction: row-reverse;
-                flex-wrap: wrap;
-                width: 90%;
-              text-align: center;
-            object-fit: cover;
-            border: inset 1px #2d1e8367;
-            border-radius: 5%;
-            padding: 10px 5px;}
-            .conservacion1 h2, .conservacion1 p{font-size: 12px;
-              padding: 10px 15px;}
-          .conservacion1 img{width: 100%;
-            height: auto;
-            object-fit: cover;
-            padding: 15px 1px;
-            border-radius: 15%;}
-          .tabuladorproteccion{font-size: 24px;
-            gap: 50px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;}
-            .tabuladorproteccion ul {display: inline;
-              padding: 10px;}
-
-              .contactos1{background-color: rgba(33, 121, 148, 0.959);
-                display: inline-block;
-                width: 40%;
-              text-align:center;
-            font-size: 24px; 
-            margin: 30px;
-            padding: 50px;
-            border: 2px inset #2d1e8367;
-            border-radius: 80%;}
-                  .contactos2{display: inline-flex;
-                    background-color: rgb(201, 217, 218);
-                    padding: 10px;
-                    border: #6b1e83 2px inset;
-                    gap: 1px 100px;}
-
-                    .contactosbackground{background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
-                      background-size:cover;}
-                    .contactos1{background-color: rgba(33, 121, 148, 0.959);
-                    display: inline-block;
-                    width: 40%;
-                  text-align:center;
-                font-size: 24px; 
-                margin: 30px;
-                padding: 50px;
-                border: 2px inset #2d1e8367;
-                border-radius: 5%;}
-                      .contactos2{display: inline-flex;
-                        background-color: rgb(201, 217, 218);
-                        padding: 10px;
-                        border: #6b1e83 2px inset;
-                        gap: 1px 100px;}
-                        .video{display: flex;
-                        width: 80%;
-                      height: auto;}
-                    }
+/*# sourceMappingURL=style.css.map */
