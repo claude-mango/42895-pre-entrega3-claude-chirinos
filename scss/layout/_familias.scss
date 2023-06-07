@@ -1,15 +1,18 @@
 .familia1{
     display: inline-block;
-    text-align:center;}
-    .familia2{ background-color: rgba(33, 121, 148, 0.199);
-        display: inline-block;
     text-align:center;
-  font-size: 15px; 
-  margin: 30px;
-  padding: 50px 20px;
-  border: 2px inset #2d1e8367;
-  border-radius: 15%;
-  overflow: hidden;}
+  
+    .familia2{ background-color: rgba(33, 121, 148, 0.199);
+      display: inline-block;
+  text-align:center;
+font-size: 15px; 
+margin: 30px;
+padding: 50px 20px;
+border: 2px inset #2d1e8367;
+border-radius: 15%;
+overflow: hidden;}
+}
+    
   
   .tipos{
     display: flex;

@@ -2,14 +2,16 @@
     display: flex;
     width: 80%;
     padding: 15px;
-  gap: 1px 120px;}
-    .index1 img{display: flex;
-      width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 60%;
-    border: 2px outset #2d1e8367;}
-    .index2{background-color: $light-color;
+  gap: 1px 120px;
+
+  img{display: flex;
+    width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 60%;
+  border: 2px outset #2d1e8367;}
+
+  .index2{background-color: $light-color;
     display: flex;
   text-align:center;
 font-size: 12px; 
@@ -17,6 +19,8 @@ margin: 30px;
 padding: 50px;
 border: 2px inset #2d1e8367;
 border-radius: 15%;}
+}
+    
 .index-img img{display: inline-block;
   width: 30%;
   height: 30%;

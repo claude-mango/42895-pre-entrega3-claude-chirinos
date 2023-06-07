@@ -74,7 +74,6 @@ a:hover {
   padding: 15px;
   gap: 1px 120px;
 }
-
 .index1 img {
   display: flex;
   width: 100px;
@@ -83,8 +82,7 @@ a:hover {
   border-radius: 60%;
   border: 2px outset rgba(45, 30, 131, 0.4039215686);
 }
-
-.index2 {
+.index1 .index2 {
   background-color: rgb(120, 136, 150);
   display: flex;
   text-align: center;
@@ -108,8 +106,7 @@ a:hover {
   display: inline-block;
   text-align: center;
 }
-
-.familia2 {
+.familia1 .familia2 {
   background-color: rgba(33, 121, 148, 0.199);
   display: inline-block;
   text-align: center;
@@ -241,36 +238,35 @@ a:hover {
   column-gap: 5px;
   row-gap: 5px;
 }
-
-.tabula__hijo {
+.tabula .tabula__hijo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.tabula__hijo img {
+.tabula .tabula__hijo img {
   width: 200px;
   height: 200px;
   padding: 5px 2px;
 }
-.tabula__hijo h2 {
+.tabula .tabula__hijo h2 {
   padding: 10px 15px;
 }
-.tabula__hijo .b1 {
+.tabula .tabula__hijo .b1 {
   grid-area: area1;
 }
-.tabula__hijo .b2 {
+.tabula .tabula__hijo .b2 {
   grid-area: area2;
 }
-.tabula__hijo .b3 {
+.tabula .tabula__hijo .b3 {
   grid-area: area3;
 }
-.tabula__hijo .b4 {
+.tabula .tabula__hijo .b4 {
   grid-area: area4;
 }
-.tabula__hijo .b5 {
+.tabula .tabula__hijo .b5 {
   grid-area: area5;
 }
-.tabula__hijo .b6 {
+.tabula .tabula__hijo .b6 {
   grid-area: area6;
 }
 
@@ -281,8 +277,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.conservacion1 {
+.conservacion .conservacion1 {
   background-color: rgb(120, 136, 150);
   display: flex;
   flex-direction: row-reverse;
@@ -295,12 +290,13 @@ a:hover {
   border-radius: 5%;
   padding: 10px 5px;
 }
-
-.conservacion1 h2, .conservacion1 p {
+.conservacion .conservacion1 h2 {
   padding: 10px 15px;
 }
-
-.conservacion1 img {
+.conservacion .conservacion1 p {
+  padding: 10px 15px;
+}
+.conservacion .conservacion1 img {
   height: 400px;
   object-fit: cover;
   padding: 30px 1px;
@@ -314,8 +310,11 @@ a:hover {
   align-items: center;
   text-align: center;
 }
-
-.tabuladorproteccion ul li {
+.tabuladorproteccion ul {
+  display: inline;
+  padding: 10px;
+}
+.tabuladorproteccion li {
   display: inline;
   padding: 10px;
 }
@@ -324,8 +323,7 @@ a:hover {
   background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
   background-size: cover;
 }
-
-.contactos1 {
+.contactosbackground .contactos1 {
   background-color: rgb(120, 136, 150);
   display: inline-block;
   width: 40%;
@@ -337,7 +335,7 @@ a:hover {
   border-radius: 5%;
 }
 
-.contactos2 {
+.formulario {
   display: inline-flex;
   background-color: rgb(201, 217, 218);
   padding: 10px;
@@ -358,13 +356,13 @@ a:hover {
     border-radius: 60%;
     border: 2px outset rgba(45, 30, 131, 0.4039215686);
   }
-  .index2 {
+  .index1 .index2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
   }
-  .index2 p {
+  .index1 .index2 p {
     text-align: center;
     justify-items: center;
   }
@@ -378,19 +376,31 @@ a:hover {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
-  .ambiente1 img {
+  .ambiente .ambiente1 img {
     height: 200px;
   }
-  .abiente1 h2, p {
+  .ambiente .ambiente1 h2 {
     font-size: 10px;
     text-align: center;
     justify-items: center;
     padding: 0;
   }
-  .conservacion1 img {
+  .ambiente .ambiente1 p {
+    font-size: 10px;
+    text-align: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .conservacion .conservacion1 img {
     height: 200px;
   }
-  .conservacion1 h2, p {
+  .conservacion .conservacion1 h2 {
+    font-size: 15px;
+    text-align: center;
+    justify-items: center;
+    padding: 10px 15px;
+  }
+  .conservacion .conservacion1 p {
     font-size: 15px;
     text-align: center;
     justify-items: center;
@@ -403,7 +413,13 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .tipos1, .tipos2, .tipos3 {
+  .tipos .tipos1 {
+    text-align: center;
+  }
+  .tipos .tipos2 {
+    text-align: center;
+  }
+  .tipos .tipos3 {
     text-align: center;
   }
 }
@@ -431,7 +447,7 @@ a:hover {
     border-radius: 60%;
     border: 2px outset rgba(45, 30, 131, 0.4039215686);
   }
-  .index2 {
+  .index1 .index2 {
     background-color: rgba(33, 121, 148, 0.199);
     display: flex;
     text-align: center;
@@ -614,7 +630,7 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .conservacion1 {
+  .conservacion .conservacion1 {
     background-color: rgb(120, 136, 150);
     display: flex;
     flex-direction: row-reverse;
@@ -626,16 +642,20 @@ a:hover {
     border-radius: 5%;
     padding: 10px 5px;
   }
-  .conservacion1 h2, .conservacion1 p {
-    font-size: 12px;
-    padding: 10px 15px;
-  }
-  .conservacion1 img {
+  .conservacion .conservacion1 img {
     width: 100%;
     height: auto;
     object-fit: cover;
     padding: 15px 1px;
     border-radius: 15%;
+  }
+  .conservacion .conservacion1 h2 {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .conservacion .conservacion1 p {
+    font-size: 12px;
+    padding: 10px 15px;
   }
   .tabuladorproteccion {
     font-size: 24px;
@@ -648,30 +668,12 @@ a:hover {
     display: inline;
     padding: 10px;
   }
-  .contactos1 {
-    background-color: rgba(33, 121, 148, 0.959);
-    display: inline-block;
-    width: 40%;
-    text-align: center;
-    font-size: 24px;
-    margin: 30px;
-    padding: 50px;
-    border: 2px inset rgba(45, 30, 131, 0.4039215686);
-    border-radius: 80%;
-  }
-  .contactos2 {
-    display: inline-flex;
-    background-color: rgb(201, 217, 218);
-    padding: 10px;
-    border: #6b1e83 2px inset;
-    gap: 1px 100px;
-  }
   .contactosbackground {
     background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
     background-size: cover;
   }
-  .contactos1 {
-    background-color: rgba(33, 121, 148, 0.959);
+  .contactosbackground .contactos1 {
+    background-color: rgb(120, 136, 150);
     display: inline-block;
     width: 40%;
     text-align: center;
@@ -681,7 +683,7 @@ a:hover {
     border: 2px inset rgba(45, 30, 131, 0.4039215686);
     border-radius: 5%;
   }
-  .contactos2 {
+  .contactosbackground .formulario {
     display: inline-flex;
     background-color: rgb(201, 217, 218);
     padding: 10px;
