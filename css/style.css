@@ -10,7 +10,7 @@ body {
 }
 
 .colorbody {
-  background-color: #a5a5a5;
+  background: radial-gradient(circle, rgb(165, 165, 165) 30%, rgb(148, 187, 233) 92%);
 }
 
 h1 {
@@ -43,8 +43,8 @@ h1 {
 }
 .menu-navegador img {
   border-radius: 80%;
-  width: 5%;
-  height: 5%;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   display: flex;
   text-align: center;
@@ -86,7 +86,7 @@ a:hover {
   background-color: rgb(120, 136, 150);
   display: flex;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   margin: 30px;
   padding: 50px;
   border: 2px inset rgba(45, 30, 131, 0.4039215686);
@@ -107,7 +107,7 @@ a:hover {
   text-align: center;
 }
 .familia1 .familia2 {
-  background-color: rgba(33, 121, 148, 0.199);
+  background-color: rgb(120, 136, 150);
   display: inline-block;
   text-align: center;
   font-size: 15px;
@@ -304,23 +304,49 @@ a:hover {
 }
 
 .tabuladorproteccion {
-  font-size: 24px;
+  font-size: 15px;
   gap: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  display: grid;
+  grid-template-areas: "area1 area2" "area3 area4" "area5 area6";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
 }
-.tabuladorproteccion ul {
-  display: inline;
-  padding: 10px;
+.tabuladorproteccion img {
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 5px 2px;
+  border-radius: 5%;
 }
-.tabuladorproteccion li {
-  display: inline;
-  padding: 10px;
+.tabuladorproteccion .proteccion {
+  text-align: center;
+}
+.tabuladorproteccion .proteccion .a1 {
+  grid-area: area1;
+}
+.tabuladorproteccion .proteccion .a2 {
+  grid-area: area2;
+}
+.tabuladorproteccion .proteccion .a3 {
+  grid-area: area3;
+}
+.tabuladorproteccion .proteccion .a4 {
+  grid-area: area4;
+}
+.tabuladorproteccion .proteccion .a5 {
+  grid-area: area5;
+}
+.tabuladorproteccion .proteccion .a6 {
+  grid-area: area6;
 }
 
 .contactosbackground {
-  background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
+  background: radial-gradient(circle, rgb(165, 165, 165) 30%, rgb(148, 187, 233) 92%);
   background-size: cover;
 }
 .contactosbackground .contactos1 {
@@ -448,7 +474,7 @@ a:hover {
     border: 2px outset rgba(45, 30, 131, 0.4039215686);
   }
   .index1 .index2 {
-    background-color: rgba(33, 121, 148, 0.199);
+    background-color: rgb(120, 136, 150);
     display: flex;
     text-align: center;
     font-size: 14px;
@@ -537,7 +563,7 @@ a:hover {
     text-align: center;
   }
   .familia1 .familia2 {
-    background-color: rgba(33, 121, 148, 0.199);
+    background-color: rgb(120, 136, 150);
     display: inline-block;
     text-align: center;
     font-size: 15px;
@@ -658,18 +684,27 @@ a:hover {
     padding: 10px 15px;
   }
   .tabuladorproteccion {
-    font-size: 24px;
+    font-size: 15px;
     gap: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: grid;
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
   }
-  .tabuladorproteccion ul {
-    display: inline;
-    padding: 10px;
+  .tabuladorproteccion img {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 2px;
+    border-radius: 5%;
   }
   .contactosbackground {
-    background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
+    background: radial-gradient(circle, rgb(165, 165, 165) 30%, rgb(148, 187, 233) 92%);
     background-size: cover;
   }
   .contactosbackground .contactos1 {

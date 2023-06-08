@@ -82,7 +82,7 @@
     border-radius: 60%;
     border: 2px outset #2d1e8367;}
   
-    .index2{background-color: rgba(33, 121, 148, 0.199);
+    .index2{background-color: $light-color;
       display: flex;
     text-align:center;
     font-size: 14px; 
@@ -152,7 +152,7 @@
 .familia1{display: inline-block;
         text-align:center;
         
-        .familia2{ background-color: rgba(33, 121, 148, 0.199);
+        .familia2{ background-color: $light-color;
           display: inline-block;
       text-align:center;
     font-size: 15px; 
@@ -259,18 +259,35 @@
                 
             
 
-.tabuladorproteccion{font-size: 24px;
+.tabuladorproteccion{font-size: 15px;
               gap: 50px;
               justify-content: center;
               align-items: center;
               text-align: center;
+              display: grid;
+              grid-template-areas:
+              'area1'
+              'area2'
+              'area3'
+              'area4'
+              'area5'
+              'area6' ;
+              grid-template-columns:repeat(1,1fr);
+              grid-template-rows: auto;
+              column-gap: 5px;
+              row-gap: 5px;
+
+              img{align-items: center;
+                width: 100px;
+                height: 100px;
+              padding: 5px 2px;
+            border-radius: 5%;}
             
-              ul {display: inline;
-                padding: 10px;}
+              
               }
 
 
-.contactosbackground{background-image: url("../images/DAM5610_Las-aves-y-sus-particularidades-fac.jpg");
+.contactosbackground{background:$main-color;
                 background-size:cover;
 .contactos1{background-color: $light-color;
                   display: inline-block;
