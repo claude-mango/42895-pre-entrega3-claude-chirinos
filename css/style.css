@@ -403,6 +403,9 @@ a:hover {
     padding: auto;
     text-align: center;
   }
+  footer .footer_izq ul {
+    display: inline-flex;
+  }
   footer .footer_der {
     display: inline-flex;
     background-color: rgb(120, 136, 150);
