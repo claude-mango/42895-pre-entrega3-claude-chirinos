@@ -765,9 +765,9 @@ a:hover {
   .contactosbackground .contactos1 {
     background-color: rgb(120, 136, 150);
     display: inline-block;
-    width: 40%;
+    width: auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     margin: 30px;
     padding: 50px;
     border: 2px inset rgba(45, 30, 131, 0.4039215686);
