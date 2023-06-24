@@ -10,23 +10,22 @@
     text-align: justify;
   width: 90%;
   object-fit: cover;
-  font-size: 15px;
+  font-size: 20px;
   border: inset 1px #2d1e8367;
   border-radius: 5%;
   padding: 10px 5px;
 
-  h2{padding: 10px 15px;}
+  h2{padding: 15px 15px;}
   p{padding: 10px 15px;}
 
   img{height: 400px;
     object-fit: cover;
-    border-radius: 15%;
-    border: 2px outset #2d1e8367;}
+    border-radius: 15%;}
 }
   }
   
   
-  .tabula{font-size: 15px;
+  .tabula{font-size: 20px;
       justify-items:center;
       align-items: center;
   display: grid;
