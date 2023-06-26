@@ -16,12 +16,17 @@
 font-size: 22px; 
 margin: 30px;
 padding: 50px;
-border-radius: 15%;}
+border-radius: 5%;
+border: 1px inset #2d1e8367;}
 }
     
-.index-img img{display: inline-block;
+.index-img{display: flex;
+  gap: 1px 15px;
+  
+  img{display: inline-block;
   width: 30%;
   height: 30%;
   object-fit: cover;
   border-radius: 60%;
+}
 }
