@@ -71,6 +71,9 @@ footer .footer_centro {
   justify-content: center;
 }
 
+a {
+  color: orange;
+}
 a:visited {
   background-color: darkslategrey;
   color: #000000;
@@ -311,6 +314,7 @@ a:hover {
   padding: 10px 5px;
 }
 .conservacion .conservacion1 h2 {
+  font-weight: bold;
   padding: 5px 10px;
   justify-content: center;
 }
@@ -615,7 +619,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 80%;
-    padding: 15px;
+    padding: 0px;
   }
   .index1 img {
     display: flex;
@@ -720,8 +724,8 @@ a:hover {
     text-align: center;
     font-size: 15px;
     margin: 30px;
-    padding: 50px 20px;
-    border: 2px inset rgba(45, 30, 131, 0.4039215686);
+    padding: 20px 10px;
+    border: 1px inset rgba(45, 30, 131, 0.4039215686);
     border-radius: 15%;
     overflow: hidden;
   }
@@ -828,11 +832,12 @@ a:hover {
     border-radius: 15%;
   }
   .conservacion .conservacion1 h2 {
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 18px;
     padding: 10px 15px;
   }
   .conservacion .conservacion1 p {
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px 15px;
   }
   .tabuladorproteccion {

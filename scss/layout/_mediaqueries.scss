@@ -184,7 +184,8 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    padding: 15px;
+    padding: 0px;
+  
 
   img{
     display: flex;
@@ -270,8 +271,8 @@ gap: 10px 1px;}
       text-align:center;
     font-size: 15px; 
     margin: 30px;
-    padding: 50px 20px;
-    border: 2px inset #2d1e8367;
+    padding: 20px 10px;
+    border: 1px inset #2d1e8367;
     border-radius: 15%;
     overflow: hidden;}
       }
@@ -364,9 +365,10 @@ gap: 10px 1px;}
               object-fit: cover;
               padding: 15px 1px;
               border-radius: 15%;}
-            h2{font-size: 12px;
+            h2{font-weight: bold;
+              font-size: 18px;
               padding: 10px 15px;} 
-            p{font-size: 12px;
+            p{font-size: 18px;
               padding: 10px 15px;} 
             } }
                 
