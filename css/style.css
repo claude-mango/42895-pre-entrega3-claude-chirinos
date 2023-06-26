@@ -72,7 +72,7 @@ footer .footer_centro {
 }
 
 a {
-  color: orange;
+  color: rgb(0, 0, 0);
 }
 a:visited {
   background-color: darkslategrey;
